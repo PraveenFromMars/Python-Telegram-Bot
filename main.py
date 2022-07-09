@@ -7,17 +7,17 @@ import shutil
 from apiclient.discovery import build
 import string
 
-key = "AIzaSyDzeub-LYJUCp0KqZBfjQTsyB6sg76Csv0"
+key = "$YOUR_API_KEY"
 
 resource = build("customsearch", 'v1', developerKey=key).cse()
 
 
-key = "gc5zTVqehcysZ6BaqnYBeHcduIoIUTNo4zXPH20SRe0"
+key = "$YOUR_API_KEY"
 
-bot = Bot("5401805479:AAEIllhooQ7C0OBtoCIMS4f3NQCDArxmHsI")
+bot = Bot("$YOUR_API_KEY")
 
 # print("bot has started")
-updater = Updater("5401805479:AAEIllhooQ7C0OBtoCIMS4f3NQCDArxmHsI", use_context=True)
+updater = Updater("$YOUR_API_KEY", use_context=True)
 
 dispatcher = updater.dispatcher
 
